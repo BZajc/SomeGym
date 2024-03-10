@@ -1,0 +1,147 @@
+.nav-mobile {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+  color: $white;
+  font-size: 2rem;
+  @include backgroundStyles("../../img/navMobile.jpg");
+
+  &__close-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    padding: 0.5rem;
+    color: $white;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 15;
+    cursor: pointer;
+
+    &:hover {
+      color: $superWhite;
+      transform: scale(1.2);
+    }
+  }
+
+  &__info-box {
+    margin: 5rem 1rem 0rem;
+    text-align: center;
+    padding: 0 3rem;
+    border-radius: 8px;
+    background-color: $black;
+  }
+
+  &__info-description {
+    font-size: 1.5rem;
+  }
+
+  &__info-btn {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    color: $white;
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border-bottom: 2px solid $white;
+    }
+
+    &::before {
+      left: -50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::after {
+      right: -50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__info-btn-chevron {
+    font-size: 3rem;
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  &__icon-box {
+    text-align: center;
+    color: $white;
+    background-color: $black;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  &__icon-description {
+    font-size: 1.75rem;
+  }
+
+  &__icon {
+    font-size: 4rem;
+  }
+
+  &__contact-box {
+    border-radius: 8px;
+    background-color: $black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+  }
+
+  &__contact-data-box {
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  &__contact-data {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid $white;
+
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+
+  &__contact-info {
+    font-size: 1.25rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 6px solid $white;
+  }
+
+  &__socials-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-icon {
+    font-size: 4rem;
+    margin: 0.5rem;
+  }
+
+  &__visual-info {
+    font-size: 1.25rem;
+    color: $black;
+    text-align: center;
+  }
+}

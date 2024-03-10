@@ -1,0 +1,46 @@
+@mixin backgroundStyles($image-path) {
+  background-image: url($image-path);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin underlineHover() {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(
+      180deg,
+      #ea8381 0%,
+      #fce396 100%
+    );
+    transition: width 0.3s;
+  }
+  &::after {
+    left: 50%;
+  }
+  &::before {
+    right: 50%;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    width: 50%;
+  }
+}
+
+@mixin gradientText() {
+  background: linear-gradient(
+    180deg,
+    rgba(234, 131, 129, 1) 0%,
+    rgba(252, 227, 150, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

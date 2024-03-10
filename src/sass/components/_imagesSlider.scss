@@ -1,0 +1,26 @@
+.images-slider {
+  border-top: 3px solid $superWhite;
+  background-color: $white;
+  height: auto;
+
+  &__box {
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem 1rem;
+    background-color: rgba(0,0,0,0.5);
+    color: $white;
+    font-size: 1.65rem;
+    transform: translate(-50%);
+  }
+}
