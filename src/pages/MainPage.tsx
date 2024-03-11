@@ -5,6 +5,8 @@ import ImagesSlider from "../components/ImagesSlider";
 import { useSelector } from "react-redux";
 import { selectShowNav } from "../store/slices/navMobileSlice";
 import Offer from "../components/Offer";
+import Partnership from "../components/Partnership";
+import PersonalTrainer from "../components/PersonalTrainer";
 
 function MainPage() {
   const showNav = useSelector(selectShowNav);
@@ -14,6 +16,8 @@ function MainPage() {
       <Header />
       <ImagesSlider />
       <Offer />
+      <Partnership />
+      <PersonalTrainer />
     </div>
   );
 }

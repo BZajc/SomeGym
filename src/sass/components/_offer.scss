@@ -3,54 +3,27 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-color: $white;
-
-  &__show {
-    font-size: 2rem;
-    width: 100%;
-    text-align: center;
-    background-color: $black;
-    color: $white;
-    font-weight: 600;
-    border-bottom: 2px solid $white;
-    position: relative;
-    
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30%;
-      border-bottom: 2px solid $white;
-    }
-
-    &::before {
-      left: 0%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    &::after {
-      right: 0%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+  @include backgroundStyles("../../img/offerBg.jpg");
 
   &__card-box {
+    position: relative;
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
+    margin: 3rem;
     // change to 1fr 1fr 1fr in MQ
   }
 
   &__card {
-    border: 3px solid $black;
-    border-radius: 5px;
+    border: 3px solid $white;
+    border-radius: 3px;
+    z-index: 7;
   }
 
   &__card-top {
-    background-color: $black;
+    background-color: $white;
     text-align: center;
-    color: $white;
+    color: $black;
   }
 
   &__card-bottom {
@@ -60,8 +33,7 @@
   &__card-type {
     font-size: 1.75rem;
     padding: 0.25rem;
-    border-bottom: 1px solid $white;
-
+    border-bottom: 1px solid $black;
   }
 
   &__card-type-subtext {
@@ -73,8 +45,32 @@
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 3px;
+    color: $white;
+  }
+
+  &__card-price-subtext,
+  &__card-read-more,
+  &__card-benefit {
+    color: $white;
   }
 
   &__card-price-subtext {
+    font-size: 1.25rem;
+    margin: 0.25rem auto 2rem;
+    width: 50%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $white;
+  }
+
+  &__card-benefit {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    margin-left: 4rem;
+  }
+
+  &__card-read-more {
+    font-size: 2rem;
   }
 }

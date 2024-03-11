@@ -4,7 +4,6 @@ function Offer() {
   return (
     <section>
       <div className="offer">
-        <button className="offer__show">SHOW OFFER</button>
         <div className="offer__card-box">
             <div className="offer__card">
                 <div className="offer__card-top">
@@ -21,7 +20,7 @@ function Offer() {
                         <li className="offer__card-benefit">Fitness plan in the price</li>
                         <li className="offer__card-benefit">One-month notice period ending at the end of the month</li>
                     </ul>
-                    <p className="offer__card-read-more">Read more {'>>'}</p>
+                    <button className="offer__card-read-more">Read more {'>>'}</button>
                 </div>
             </div>
             <div className="offer__card">
@@ -39,7 +38,7 @@ function Offer() {
                         <li className="offer__card-benefit">Fitness plan in the price</li>
                         <li className="offer__card-benefit">One-month notice period ending at the end of the month</li>
                     </ul>
-                    <p className="offer__card-read-more">Read more {'>>'}</p>
+                    <button className="offer__card-read-more">Read more {'>>'}</button>
                 </div>
             </div>
             <div className="offer__card">
@@ -57,7 +56,7 @@ function Offer() {
                         <li className="offer__card-benefit">Fitness plan in the price</li>
                         <li className="offer__card-benefit">One-month notice period ending at the end of the month</li>
                     </ul>
-                    <p className="offer__card-read-more">Read more {'>>'}</p>
+                    <button className="offer__card-read-more">Read more {'>>'}</button>
                 </div>
             </div>
         </div>
