@@ -14,11 +14,7 @@
     bottom: -5%;
     width: 0;
     height: 3px;
-    background: linear-gradient(
-      180deg,
-      #ea8381 0%,
-      #fce396 100%
-    );
+    background-color: $superWhite;
     transition: width 0.3s;
   }
   &::after {
@@ -43,4 +39,52 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientText2() {
+  background: linear-gradient(
+    135deg,
+    rgb(186, 26, 210) 0%,
+    rgba(33, 148, 223, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin buttonStyling() {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  &::before {
+    top: -5%;
+    left: -5%;
+    border-top: 3px solid rgb(33, 148, 223);
+    border-left: 3px solid rgb(33, 148, 223);
+  }
+  &::after {
+    bottom: -5%;
+    right: -5%;
+    border-bottom: 3px solid rgb(186, 26, 210);
+    border-right: 3px solid rgb(186, 26, 210);
+  }
+
+  &:hover::before {
+    top: 0;
+    left: 0;
+    border-top: 3px solid $white;
+    border-left: 3px solid $white;
+  }
+  &:hover::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid $white;
+    border-right: 3px solid $white;
+  }
 }

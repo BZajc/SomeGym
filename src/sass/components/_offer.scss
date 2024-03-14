@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  @include backgroundStyles("../../img/offerBg.jpg");
+  @include backgroundStyles("../../img/mainBg.jpg");
 
   &__card-box {
     position: relative;
@@ -17,7 +17,6 @@
   &__card {
     border: 3px solid $white;
     border-radius: 3px;
-    z-index: 7;
   }
 
   &__card-top {
