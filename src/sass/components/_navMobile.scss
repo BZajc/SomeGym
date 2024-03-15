@@ -9,7 +9,6 @@
   height: 100vh;
   overflow-y: auto;
   z-index: 10;
-  color: $white;
   font-size: 2rem;
   @include backgroundStyles("../../img/navMobile.jpg");
 
@@ -30,121 +29,86 @@
     }
   }
 
-  &__info-box {
-    margin: 5rem 1rem 0rem;
-    text-align: center;
-    padding: 0 3rem;
-    border-radius: 8px;
-    background-color: $black;
-  }
-
-  &__info-description {
-    font-size: 1.5rem;
-  }
-
-  &__info-btn {
+  &__list {
     display: flex;
-    align-items: center;
-    margin: 1rem auto;
-    color: $white;
-    font-size: 2rem;
+    flex-direction: column;
+    margin: 8rem 0 2rem 2rem;
+  }
 
-    &::before,
+  &__item {
+    list-style: none;
+  }
+
+  &__btn {
+    display: flex;
+    color: $white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 260px;
+    transition: color 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      width: 3px;
+      background-color: $white;
+      transition: height 0.3s;
+    }
+
     &::after {
       content: "";
       position: absolute;
-      width: 50%;
-      border-bottom: 2px solid $white;
+      left: 50%;
+      bottom: -5%;
+      height: 3px;
+      width: 0;
+      background-color: $white;
+      transition: width 0.3s, background-color 0.3s;
+      transform: translateX(-50%);
     }
 
-    &::before {
-      left: -50%;
-      top: 50%;
-      transform: translateY(-50%);
+    &:hover::before {
+      height: 0;
     }
-    &::after {
-      right: -50%;
-      top: 50%;
-      transform: translateY(-50%);
+
+    &:hover::after {
+      width: 100%;
+      background-color: $blue;
     }
-  }
 
-  &__info-btn-chevron {
-    font-size: 3rem;
-  }
-
-  &__icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 3rem;
-    gap: 2rem;
-  }
-
-  &__icon-box {
-    text-align: center;
-    color: $white;
-    background-color: $black;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  &__icon-description {
-    font-size: 1.75rem;
+    &:hover {
+      color: $blue;
+    }
   }
 
   &__icon {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding: 0.5rem;
   }
 
   &__contact-box {
-    border-radius: 8px;
-    background-color: $black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-  }
-
-  &__contact-data-box {
-    font-size: 1.25rem;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  &__contact-data {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid $white;
-
-    &:nth-last-child(1) {
-      border-bottom: none;
-    }
+    padding: 0 2rem 2rem;
+    color: $white;
+    z-index: 1;
   }
 
   &__contact-info {
-    font-size: 1.25rem;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 6px;
-    border: 6px solid $white;
+    padding-top: 0.5rem;
+    border-top: 3px solid $white;
   }
 
-  &__socials-box {
-    display: flex;
-    align-items: center;
+  &__contact-data-box {
+    margin-top: 1rem;
   }
 
-  &__social-icon {
-    font-size: 4rem;
-    margin: 0.5rem;
-    color: $white;
-  }
-
-  &__visual-info {
-    font-size: 1.5rem;
-    color: $white;
+  &__contact-data {
+    display: block;
+    color: $blue;
     padding: 0.25rem;
-    text-align: center;
-    border-top: 2px solid $white;
   }
 }
