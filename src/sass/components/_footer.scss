@@ -1,0 +1,45 @@
+.footer {
+  background-color: rgb(61, 61, 61);
+  color: $white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__purpose-text {
+    color: $blue;
+  }
+
+  &__list-name {
+    margin-top: 1rem;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__list-box {
+    margin: 0.5rem 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-name {
+    font-size: 2rem;
+    color: $blue;
+  }
+
+  &__list-item {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+
+    button {
+        color: $white;
+    }
+  }
+
+}

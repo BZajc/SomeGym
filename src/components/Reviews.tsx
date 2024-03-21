@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-import Ratings from "react-ratings-declarative";
 import { faker } from "@faker-js/faker";
 import reviews1 from "../img/reviews1.jpg";
 import reviews2 from "../img/reviews2.jpg";

@@ -5,11 +5,12 @@ import ImagesSlider from "../components/ImagesSlider";
 import { useSelector } from "react-redux";
 import { selectShowNav } from "../store/slices/navMobileSlice";
 import Offer from "../components/Offer";
-// import Partnership from "../components/Partnership";
 import PersonalTrainer from "../components/PersonalTrainer";
 import ProgressBar from "../components/ProgressBar";
 import GeneralInfo from "../components/GeneralInfo";
 import Reviews from "../components/Reviews";
+import Media from "../components/Media";
+import Footer from "../components/Footer";
 
 function MainPage() {
   const showNav = useSelector(selectShowNav);
@@ -31,10 +32,11 @@ function MainPage() {
       <main>
         <ImagesSlider />
         <Offer />
-        {/* <Partnership /> */}
         <PersonalTrainer />
         <GeneralInfo />
         <Reviews />
+        <Media />
+        <Footer />
       </main>
     </div>
   );

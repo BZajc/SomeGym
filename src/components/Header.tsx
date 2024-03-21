@@ -8,7 +8,6 @@ function Header() {
   const dispatch = useDispatch();
 
   const handleNavClick = () => {
-    console.log("Burger Icon clicked, navigation will open");
     dispatch(setShowNav(true));
   };
 

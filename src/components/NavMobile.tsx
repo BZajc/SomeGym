@@ -7,9 +7,7 @@ import {
   FaStar,
   FaMoneyCheckDollar,
   FaQuestion,
-  FaSquarePhone,
-  FaSquareEnvelope,
-  FaHouse,
+  FaGithub,
   FaFacebook,
   FaXTwitter,
   FaYoutube,
@@ -24,7 +22,6 @@ function NavMobile() {
 
   const handleCloseClick = () => {
     dispatch(setShowNav(false));
-    console.log("Close clicked!");
   };
 
   return (
@@ -71,27 +68,26 @@ function NavMobile() {
             </button>
           </li>
         </ul>
-        {/* <div className="nav-mobile__contact-box">
-          <p className="nav-mobile__contact-info">
-            We are here to help you! Feel free to contact us with any questions
-            or support needs.
-          </p> */}
-          {/* <div className="nav-mobile__contact-data-box">
-            <a href="tel:+23 555 213 749" className="nav-mobile__contact-data">
-              <FaSquarePhone /> +23 555 213 749
-            </a>
-            <a
-              href="mailto:somegym@support.com"
-              className="nav-mobile__contact-data"
-            >
-              <FaSquareEnvelope /> somegym@support.com
-            </a>
-            <p className="nav-mobile__contact-data">
-              <FaHouse />
-              Wonderland 23b
-            </p>
-          </div> */}
-        {/* </div> */}
+        <div className="nav-mobile__media-box">
+          <a href="https://www.facebook.com/">
+            <FaFacebook className="nav-mobile__media-icon" />
+          </a>
+          <a href="https://twitter.com/">
+            <FaXTwitter className="nav-mobile__media-icon" />
+          </a>
+          <a href="https://www.youtube.com/">
+            <FaYoutube className="nav-mobile__media-icon" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <FaInstagram className="nav-mobile__media-icon" />
+          </a>
+          <a href="https://www.tiktok.com/">
+            <FaTiktok className="nav-mobile__media-icon" />
+          </a>
+          <a href="https://www.tiktok.com/">
+            <FaGithub className="nav-mobile__media-icon" />
+          </a>
+        </div>
       </div>
     </nav>
   );
