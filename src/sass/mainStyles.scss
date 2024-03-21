@@ -1,8 +1,8 @@
 // Utilities
-@import "./utils/default";
 @import "./utils/colors";
-@import "./utils/animations";
 @import "./utils/mixins";
+@import "./utils/default";
+@import "./utils/animations";
 
 // Components Styles
 @import "./pages/mainPage";
@@ -13,6 +13,8 @@
 @import "./components/partnership";
 @import "./components/personalTrainer";
 @import "./components/progressBar";
+@import "./components/generalInfo";
+@import "./components/reviews";
 
 // Media Queries
 

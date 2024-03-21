@@ -1,9 +1,31 @@
 .offer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   overflow: hidden;
-  @include backgroundStyles("../../img/mainBg.jpg");
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 1rem;
+  }
+
+  &__check-offer-text {
+    text-align: center;
+    color: $white;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: 3px solid $white;
+  }
+
+  &__btn {
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding: 0.75rem;
+    margin: 0.2rem;
+    color: $white;
+    @include buttonStyling;
+    font-weight: bold;
+  }
 
   &__card-box {
     position: relative;
@@ -15,14 +37,14 @@
   }
 
   &__card {
-    border: 3px solid $white;
     border-radius: 3px;
+    background-color: $blue;
   }
 
   &__card-top {
-    background-color: $white;
     text-align: center;
     color: $black;
+    border-radius: 3px 3px 0 0;
   }
 
   &__card-bottom {
@@ -71,5 +93,32 @@
 
   &__card-read-more {
     font-size: 2rem;
+  }
+
+  &__best-deal {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 100%;
+    background-color: $blue;
+    color: $white;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+  }
+
+  &__active-btn {
+  &::before {
+    top: 0;
+    left: 0;
+    border-top: 3px solid $white;
+    border-left: 3px solid $white;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid $white;
+    border-right: 3px solid $white;
+  }
   }
 }

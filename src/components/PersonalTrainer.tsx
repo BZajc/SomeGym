@@ -82,7 +82,7 @@ function PersonalTrainer() {
           <button className="personal-trainer__prices-button">
             Prices from 40$ <FaAngleRight className="personal-trainer__prices-button-icon"/>
           </button>
-        h</div>
+        </div>
       </div>
     </section>
   );

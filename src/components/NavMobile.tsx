@@ -71,12 +71,12 @@ function NavMobile() {
             </button>
           </li>
         </ul>
-        <div className="nav-mobile__contact-box">
+        {/* <div className="nav-mobile__contact-box">
           <p className="nav-mobile__contact-info">
             We are here to help you! Feel free to contact us with any questions
             or support needs.
-          </p>
-          <div className="nav-mobile__contact-data-box">
+          </p> */}
+          {/* <div className="nav-mobile__contact-data-box">
             <a href="tel:+23 555 213 749" className="nav-mobile__contact-data">
               <FaSquarePhone /> +23 555 213 749
             </a>
@@ -90,8 +90,8 @@ function NavMobile() {
               <FaHouse />
               Wonderland 23b
             </p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </nav>
   );

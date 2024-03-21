@@ -2,7 +2,6 @@
   padding-top: 3rem;
   width: 100%;
   background-color: $white;
-  @include backgroundStyles("../../img/mainBg.jpg");
 
   &__text {
     color: $white;

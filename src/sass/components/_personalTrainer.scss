@@ -1,11 +1,12 @@
 .personal-trainer {
-  @include backgroundStyles("../../img/mainBg.jpg");
 
   &__section-name {
     font-size: 2.25rem;
     color: $white;
     padding: 1rem;
     border-top: 3px solid $white;
+    border-bottom: 3px solid $white;
+    font-weight: 300;
   }
 
   &__box {
@@ -111,16 +112,11 @@
   &__prices-button {
     display: flex;
     align-items: center;
-    @include gradientText2;
     font-size: 2rem;
     border-radius: 3px;
     padding: 1rem;
     margin: 0 3rem 3rem auto;
-
-    &:hover {
-      -webkit-text-fill-color: $white;
-      transition: -webkit-text-fill-color 0.3s;
-    }
+    color: $white;
 
     @include buttonStyling;
   }
@@ -128,4 +124,5 @@
   &__prices-button-icon {
     color: $white;
   }
+
 }

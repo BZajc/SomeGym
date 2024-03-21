@@ -46,7 +46,7 @@
     padding: 1rem;
     margin: 1rem;
     width: 260px;
-    transition: color 0.3s;
+    transition: color 0.3s, scale 0.3s;
 
     &::before {
       content: "";
@@ -83,32 +83,12 @@
 
     &:hover {
       color: $blue;
+      scale: 1.2;
     }
   }
 
   &__icon {
     font-size: 3rem;
     padding: 0.5rem;
-  }
-
-  &__contact-box {
-    padding: 0 2rem 2rem;
-    color: $white;
-    z-index: 1;
-  }
-
-  &__contact-info {
-    padding-top: 0.5rem;
-    border-top: 3px solid $white;
-  }
-
-  &__contact-data-box {
-    margin-top: 1rem;
-  }
-
-  &__contact-data {
-    display: block;
-    color: $blue;
-    padding: 0.25rem;
   }
 }
