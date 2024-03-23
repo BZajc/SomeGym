@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,10 +32,28 @@ function ImagesSlider() {
     },
   ];
 
+  const [slidesToShow, setSlidesToShow] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1400) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(1);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const settings = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
   };

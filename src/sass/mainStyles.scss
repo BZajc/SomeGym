@@ -16,8 +16,10 @@
 @import "./components/reviews";
 @import "./components/media";
 @import "./components/footer";
+@import "./components/navDesktop";
 
 // Media Queries
 @import "./utils/mq576";
 @import "./utils/mq768";
 @import "./utils/mq992";
+@import "./utils/mq1400";

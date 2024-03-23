@@ -1,0 +1,28 @@
+@media (min-width: 1400px) {
+  .header {
+    &__logo {
+      width: 150px;
+      height: 150px;
+    }
+    &__burger-btn {
+      display: none;
+    }
+    &__shortcuts {
+      display: none;
+    }
+    &__text-box {
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        font-size: 3.5rem;
+      }
+    }
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+  }
+}

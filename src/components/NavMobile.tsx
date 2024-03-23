@@ -84,7 +84,7 @@ function NavMobile() {
           <a href="https://www.tiktok.com/">
             <FaTiktok className="nav-mobile__media-icon" />
           </a>
-          <a href="https://www.tiktok.com/">
+          <a href="https://github.com/BZajc/SomeGym">
             <FaGithub className="nav-mobile__media-icon" />
           </a>
         </div>

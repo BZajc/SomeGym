@@ -11,11 +11,12 @@ import GeneralInfo from "../components/GeneralInfo";
 import Reviews from "../components/Reviews";
 import Media from "../components/Media";
 import Footer from "../components/Footer";
+import NavDesktop from "../components/NavDesktop";
 
 function MainPage() {
   const showNav = useSelector(selectShowNav);
 
-  // Remove scroll when nav is open
+  // Remove scroll when mobile nav is open
   useEffect(() => {
     if (showNav) {
       document.body.style.overflowY = "hidden";
@@ -28,6 +29,7 @@ function MainPage() {
     <div className="main-page">
       {showNav && <NavMobile />}
       <ProgressBar />
+      <NavDesktop />
       <Header />
       <main>
         <ImagesSlider />

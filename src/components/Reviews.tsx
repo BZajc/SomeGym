@@ -12,8 +12,6 @@ interface ReviewData {
 }
 
 function Reviews() {
-  const randomName = faker.person.fullName();
-
   const reviewsData: ReviewData[] = [
     {
       image: reviews1,
@@ -37,7 +35,20 @@ function Reviews() {
     },
   ];
 
-  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0); // Used to display different content for reviews__card
+  const [mediaQuery, setMediaQuery] = useState(window.innerWidth > 768); // Used to determine the number of reviews__card displayed
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMediaQuery(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,19 +59,19 @@ function Reviews() {
     return () => {
       clearInterval(interval);
     };
-  }, [reviewsData.length]);
-
-  const currentReview = reviewsData[currentReviewIndex];
-
-  const mediaQuery = window.innerWidth > 768;
+  }, [reviewsData.length, currentReviewIndex]);
 
   const renderCard = () => {
+    const randomName = faker.person.fullName();
+    const randomIndex = Math.floor(Math.random() * reviewsData.length);
+    const currentReview = reviewsData[randomIndex];
+
     return (
       <div className="reviews__card">
         <div className="reviews__card-top">
           <img
             src={currentReview.image}
-            alt={`reviews${currentReviewIndex + 1}`}
+            alt={`reviews${randomIndex + 1}`}
             className="reviews__card-img"
           />
           <p className="reviews__card-username">{randomName}</p>
@@ -79,13 +90,13 @@ function Reviews() {
         <div className="reviews__box">
           <div className="reviews__overlay"></div>
           {mediaQuery ? (
-          <>
-            {renderCard()}
-            {renderCard()}
-          </>
-        ) : (
-          renderCard()
-        )}
+            <>
+              {renderCard()}
+              {renderCard()}
+            </>
+          ) : (
+            renderCard()
+          )}
         </div>
       </div>
     </section>
