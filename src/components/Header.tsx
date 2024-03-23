@@ -59,7 +59,7 @@ function Header() {
             </button>
           </div>
           <div className="header__text-box">
-            <h1 className="header__text">Welcome in SomeGym</h1>
+            <h1 className="header__text">Welcome to SomeGym</h1>
             <p className="header__text">{headerSubtitle}</p>
           </div>
           <div className="header__shortcuts">

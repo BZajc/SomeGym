@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
   @include backgroundStyles("../../img/mainBg.jpg");
+  // background-attachment: scroll;
 }
 
 button {

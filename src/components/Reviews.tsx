@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { faker } from "@faker-js/faker";
 import reviews1 from "../img/reviews1.jpg";
@@ -53,12 +52,33 @@ function Reviews() {
 
   const currentReview = reviewsData[currentReviewIndex];
 
+  const mediaQuery = window.innerWidth > 768;
+
+  const renderCard = () => {
+    return (
+      <div className="reviews__card">
+        <div className="reviews__card-top">
+          <img
+            src={currentReview.image}
+            alt={`reviews${currentReviewIndex + 1}`}
+            className="reviews__card-img"
+          />
+          <p className="reviews__card-username">{randomName}</p>
+        </div>
+        <div className="reviews__card-bottom">
+          <p className="reviews__card-text">{currentReview.text}</p>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section>
       <div className="reviews">
         <h3 className="reviews__section-name">Reviews</h3>
         <div className="reviews__box">
           <div className="reviews__overlay"></div>
+
           <div className="reviews__card">
             <div className="reviews__card-top">
               <img

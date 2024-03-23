@@ -1,0 +1,92 @@
+@media (min-width: 768px) {
+  .header {
+    &__burger-btn {
+      font-size: 5rem;
+    }
+    &__shortcut-btn {
+      font-size: 2rem;
+
+      &:hover {
+        font-size: 2.25rem;
+      }
+    }
+  }
+  .nav-mobile {
+    &__close-btn {
+      font-size: 5rem;
+    }
+    &__media-icon {
+      font-size: 6.5rem;
+    }
+  }
+  .images-slider {
+    &__box img {
+      height: 480px;
+    }
+  }
+  .offer {
+    &__btn {
+      font-size: 1.75rem;
+    }
+    &__card-box {
+      width: 380px;
+    }
+    &__card-type {
+      padding: 0.5rem;
+    }
+    &__card-price-subtext {
+      font-size: 1.5rem;
+    }
+    &__card-benefit-included {
+      font-size: 2rem;
+    }
+    &__card-benefit {
+      font-size: 1.75rem;
+    }
+  }
+  .personal-trainer {
+    &__text-box {
+      max-width: 300px;
+    }
+    &__text-topic {
+      font-size: 2rem;
+    }
+    &__text,
+    &__list-item {
+      font-size: 1.75rem;
+    }
+    &__prices-button {
+      font-size: 2.25rem;
+    }
+  }
+  .general-info {
+    &__main {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    &__main-icon-box {
+      margin: 2rem;
+      padding: 2rem;
+    }
+  }
+  .reviews {
+    &__section-name {
+      padding-left: 6rem;
+      font-size: 2.75rem;
+    }
+  }
+  .footer {
+    &__box {
+      margin: 0 auto;
+      flex-direction: row;
+      margin-top: 3rem;
+    }
+    &__list-box {
+        margin: 1rem;
+    }
+
+    &__purpose-text {
+      display: none;
+    }
+  }
+}

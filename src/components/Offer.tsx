@@ -12,7 +12,7 @@ function Offer() {
     {
       price: "30$",
       cardName: "Flexible Gym Membership",
-      frequency: "Month-to-month",
+      frequency: "per month",
     },
     {
       price: "150$",
@@ -22,7 +22,7 @@ function Offer() {
     {
       price: "300$",
       cardName: "Premium Gym Membership",
-      frequency: "12 months",
+      frequency: "yearly",
     },
   ];
 
@@ -52,9 +52,6 @@ function Offer() {
           <div className="offer__card offer__best-btn">
             <div className="offer__card-top">
               <p className="offer__card-type">{selectedOffer.cardName}</p>
-              <p className="offer__card-type-subtext">
-                Perfect for new club member
-              </p>
             </div>
             <div className="offer__card-bottom">
               <p className="offer__card-price">{selectedOffer.price}</p>
@@ -62,14 +59,11 @@ function Offer() {
                 {selectedOffer.frequency}
               </p>
               <ul>
-                <li className="offer__card-benefit">Club access 24/7</li>
+                <li className="offer__card-benefit-included">Included:</li>
+                <li className="offer__card-benefit">24/7 Access</li>
                 <li className="offer__card-benefit">Free workout water</li>
-                <li className="offer__card-benefit">
-                  Group classes in the price
-                </li>
-                <li className="offer__card-benefit">
-                  Fitness plan in the price
-                </li>
+                <li className="offer__card-benefit">Group classes</li>
+                <li className="offer__card-benefit">Fitness plan</li>
                 <li className="offer__card-benefit">
                   One-month notice period ending at the end of the month
                 </li>

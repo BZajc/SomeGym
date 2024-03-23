@@ -1,0 +1,186 @@
+@media (min-width: 992px) {
+  .nav-mobile {
+    &__description {
+      font-size: 3rem;
+    }
+    &__btn {
+      width: 340px;
+    }
+    &__icon {
+      font-size: 4rem;
+    }
+    &__close-btn {
+      font-size: 7rem;
+    }
+  }
+  .header {
+    height: 500px;
+    &__background {
+      height: 500px;
+    }
+    &__logo {
+      width: 110px;
+      height: 110px;
+    }
+    &__burger-btn {
+      font-size: 7rem;
+    }
+    &__text-box {
+      h1 {
+        font-size: 3.25rem;
+      }
+      p {
+        font-size: 2.25rem;
+      }
+    }
+    &__shortcut-btn {
+      width: 280px;
+    }
+  }
+  .images-slider {
+    &__box img {
+      height: 600px;
+    }
+    &__text {
+      padding: 1.25rem;
+      font-size: 2.75rem;
+    }
+  }
+  .offer {
+    margin-bottom: 5rem;
+
+    &__check-offer-text {
+      font-size: 3rem;
+    }
+    &__btn-box {
+      margin: 5rem 2rem;
+    }
+    &__btn {
+      font-size: 2.25rem;
+    }
+    &__best-deal {
+      font-size: 1.75rem;
+    }
+    &__card-box {
+      width: 460px;
+    }
+    &__card-type {
+      padding: 1.25rem;
+      font-size: 2.5rem;
+    }
+    &__card-price {
+      font-size: 5rem;
+    }
+    &__card-price-subtext {
+      font-size: 2.25rem;
+    }
+    &__card-benefit-included {
+      font-size: 3.5rem;
+    }
+    &__card-benefit {
+      font-size: 2.5rem;
+    }
+    &__card-read-more {
+      font-size: 4rem;
+      padding: 1.5rem;
+    }
+  }
+  .personal-trainer {
+    &__section-name {
+      font-size: 3rem;
+    }
+    &__text-box {
+      max-width: 450px;
+    }
+    &__text-topic {
+      font-size: 2.75rem;
+    }
+    &__text,
+    &__list-item {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+    &__prices-button {
+      font-size: 4rem;
+    }
+  }
+  .general-info {
+    &__header-box {
+      height: 250px;
+    }
+    &__section-name {
+      font-size: 3.25rem;
+    }
+    &__main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    &__main-icon-box {
+      margin: 3.5rem;
+      padding: 2rem;
+    }
+    &__main-icon {
+      font-size: 7rem;
+    }
+    &__topic {
+      font-size: 3rem;
+    }
+    &__text {
+      font-size: 2.25rem;
+    }
+    &__app-box img {
+      height: 100px;
+    }
+  }
+  .reviews {
+    height: 500px;
+    &__section-name {
+      font-size: 5rem;
+      padding: 3rem 6rem 0rem;
+    }
+    &__card {
+      width: 400px;
+    }
+    &__card-top {
+      padding-bottom: 2rem;
+    }
+    &__card-username {
+      font-size: 3.5rem;
+    }
+    &__card-img {
+      width: 100px;height: 100px;
+    }
+    &__card-box {
+      width: 400px;
+    }
+    &__card-text {
+      font-size: 3rem;
+    }
+  }
+  .media {
+    &__section-name {
+      font-size: 3rem;
+      text-align: center;
+    }
+    &__text {
+      font-size: 2.25rem;
+    }
+    &__icon {
+      font-size: 7.5rem;
+    }
+  }
+  .footer {
+    &__list-name {
+      font-size: 3rem;
+    }
+    &__list-box {
+      margin: 3rem;
+    }
+    &__list-item {
+      font-size: 2.25rem;
+      button {
+        font-size: 2rem;
+      }
+    }
+  }
+}

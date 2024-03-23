@@ -5,7 +5,9 @@ function PersonalTrainer() {
   return (
     <section>
       <div className="personal-trainer">
-        <h2 className="personal-trainer__section-name">Need a help of a professional trainer?</h2>
+        <h2 className="personal-trainer__section-name">
+          Need help from professional trainer?
+        </h2>
         <div className="personal-trainer__box">
           <div className="personal-trainer__text-box personal-trainer__text-box--1">
             <h3 className="personal-trainer__text-topic">
@@ -80,7 +82,8 @@ function PersonalTrainer() {
             </p>
           </div>
           <button className="personal-trainer__prices-button">
-            Prices from 40$ <FaAngleRight className="personal-trainer__prices-button-icon"/>
+            Prices from 40${" "}
+            <FaAngleRight className="personal-trainer__prices-button-icon" />
           </button>
         </div>
       </div>

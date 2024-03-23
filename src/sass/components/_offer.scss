@@ -33,12 +33,13 @@
     grid-template-columns: auto;
     gap: 1rem;
     margin: 3rem;
-    // change to 1fr 1fr 1fr in MQ
+    width: 300px;
+    margin: 3rem auto;
   }
 
   &__card {
     border-radius: 3px;
-    background-color: rgba(223, 33, 223, 0.5);
+    background: $secondaryColor;
     @include buttonStyling;
   }
 
@@ -48,6 +49,7 @@
     color: $white;
     border-radius: 3px 3px 0 0;
     z-index: 1;
+    font-weight: 700;
   }
 
   &__card-bottom {
@@ -88,12 +90,19 @@
     border-bottom: 1px solid $white;
   }
 
-  &__card-benefit {
+  &__card-benefit,
+  &__card-benefit-included {
     list-style: none;
     font-size: 1.5rem;
     padding: 0.5rem 1.5rem;
     text-align: left;
     margin-left: 4rem;
+  }
+
+  &__card-benefit-included {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.75rem;
   }
 
   &__card-read-more {
