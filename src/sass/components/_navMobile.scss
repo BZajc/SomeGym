@@ -12,7 +12,6 @@
   font-size: 2rem;
   @include backgroundStyles("../../img/navMobile.jpeg");
 
-
   &__close-btn {
     position: fixed;
     top: 0;
@@ -97,6 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 8rem;
   }
 
   &__media-icon {

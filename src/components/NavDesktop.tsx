@@ -6,16 +6,19 @@ import {
   FaStar,
   FaMoneyCheckDollar,
   FaQuestion,
-//   FaGithub,
-//   FaFacebook,
-//   FaXTwitter,
-//   FaYoutube,
-//   FaInstagram,
-//   FaTiktok,
   FaGrip,
 } from "react-icons/fa6";
+import NavDesktopMedia from "./NavDesktopMedia";
+import { useDispatch, useSelector } from "react-redux";
+import { selectShowNav } from "../store/slices/navDesktopSlice";
 
 function NavDesktop() {
+  const dispatch = useDispatch();
+  const mediaOpen = useSelector(selectShowNav)
+
+  const handleMediaOpen = () => {
+    dispatch({ type: "navDesktop/setShowNav", payload: !mediaOpen });
+  }
   return (
     <nav>
       <div className="nav-desktop">
@@ -56,11 +59,12 @@ function NavDesktop() {
               <p className="nav-desktop__description">FAQ</p>
             </button>
           </li>
-          <li className="nav-desktop__item">
-            <button className="nav-desktop__btn">
+          <li className="nav-desktop__item nav-desktop__item--media">
+            <button className="nav-desktop__btn" onClick={handleMediaOpen}>
               <FaGrip className="nav-desktop__icon" />
               <p className="nav-desktop__description">Socials</p>
             </button>
+            {mediaOpen && <NavDesktopMedia />}
           </li>
         </ul>
       </div>

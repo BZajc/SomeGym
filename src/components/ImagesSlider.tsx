@@ -31,7 +31,7 @@ function ImagesSlider() {
       alt: "trainer helping with exercises",
     },
   ];
-
+  
   const [slidesToShow, setSlidesToShow] = useState(1);
 
   useEffect(() => {
@@ -42,6 +42,8 @@ function ImagesSlider() {
         setSlidesToShow(1);
       }
     };
+
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 

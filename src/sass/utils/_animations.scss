@@ -1,17 +1,21 @@
-// @mixin headerSubtitle {
-//   animation: headerSubtitle 4s linear;
-//   @keyframes headerSubtitle {
-//     0% {
-//       opacity: 0;
-//     }
-//     20% {
-//       opacity: 1;
-//     }
-//     80% {
-//       opacity: 1;
-//     }
-//     100% {
-//       opacity: 0;
-//     }
-//   }
-// }
+@mixin appearFromLeft {
+  animation: appearFromLeft 5s ease-in-out infinite;
+  @keyframes appearFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+}

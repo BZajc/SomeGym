@@ -1,9 +1,5 @@
 @media (min-width: 1400px) {
   .header {
-    &__logo {
-      width: 150px;
-      height: 150px;
-    }
     &__burger-btn {
       display: none;
     }
@@ -12,10 +8,10 @@
     }
     &__text-box {
       h1 {
-        font-size: 6rem;
+        font-size: 4rem;
       }
       p {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
     }
   }
@@ -24,5 +20,137 @@
   }
   .nav-desktop {
     display: block;
+  }
+  .images-slider {
+    &__box img {
+      height: 450px;
+    }
+    &__text {
+      font-size: 2.25rem;
+    }
+  }
+  .offer {
+    &__check-offer-text {
+      font-size: 3rem;
+    }
+    &__btn-box {
+      margin: 4rem 2rem;
+    }
+    &__btn {
+      font-size: 1.75rem;
+    }
+    &__best-deal {
+      font-size: 1.5rem;
+    }
+    &__card-box {
+      width: 400px;
+    }
+    &__card-type {
+      padding: 1rem;
+      font-size: 2.25rem;
+    }
+    &__card-price {
+      font-size: 4rem;
+    }
+    &__card-price-subtext {
+      font-size: 2rem;
+    }
+    &__card-benefit-included {
+      font-size: 3rem;
+    }
+    &__card-benefit {
+      font-size: 2rem;
+    }
+    &__card-read-more {
+      font-size: 2.5rem;
+      padding: 1.5rem;
+    }
+  }
+  .personal-trainer {
+    &__text-box {
+      max-width: 350px;
+      &--3 {
+        margin-top: 3rem;
+      }
+    }
+    &__text-topic {
+      font-size: 2.25rem;
+    }
+    &__text,
+    &__list-item {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    &__prices-button {
+      font-size: 2.5rem;
+    }
+  }
+  .general-info {
+    &__header-box {
+      height: 175px;
+      background-position-y: 15%;
+    }
+    &__section-name {
+      font-size: 2.75rem;
+    }
+    &__main-icon-box {
+      margin: 0.5rem;
+    }
+    &__main-icon {
+      font-size: 5rem;
+    }
+    &__topic {
+      font-size: 2.5rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+    &__app-box img {
+      height: 75px;
+    }
+  }
+  .reviews {
+    height: 400px;
+    &__section-name {
+      font-size: 3.5rem;
+      padding: 2rem 3rem 0rem;
+    }
+    &__card {
+      width: 500px;
+    }
+    &__card-top {
+      padding-bottom: 1rem;
+    }
+    &__card-username {
+      font-size: 3rem;
+    }
+    &__card-img {
+      width: 75px;height: 75px;
+    }
+    &__card-text {
+      font-size: 2.5rem;
+    }
+  }
+  .media {
+    &__text {
+      text-align: center;
+    }
+    &__icon {
+      font-size: 6rem;
+    }
+  }
+  .footer {
+    &__list-name {
+      font-size: 2.25rem;
+    }
+    &__list-box {
+      margin: 3rem;
+    }
+    &__list-item {
+      font-size: 1.75rem;
+      button {
+        font-size: 1.75rem;
+      }
+    }
   }
 }
